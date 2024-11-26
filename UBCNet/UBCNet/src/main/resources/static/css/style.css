@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Title on the Left */
+.site-title h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links on the Right */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #ff6600;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+/* Search Bar */
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 12px;
+    font-size: 18px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Flexbox Layout for Equal Boxes */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Section Styling (Visible Boxes) */
+.section {
+    flex: 1; /* Equal size for all sections */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Section Title Styling */
+.section-title {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.section-title:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* Specific Box Colors (Optional, for better visibility) */
+.shop-section {
+    background-color: #f7f9fc;
+}
+
+.announcements-section {
+    background-color: #fff7e6;
+}
+
+.housing-section {
+    background-color: #e6f7ff;
+}
+
+/* Form Styling */
+.post-form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e65a00;
+}

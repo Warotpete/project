@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>UBCNet - Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="site-title">
+            <h1>UBCNet</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/announcements">Announcements</a>
+            <a href="/housing">Housing</a>
+            <a href="/shop">Shop</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h2>Shop Listings</h2>
+    <p>Here you'll find shop-related posts.</p>
+</main>
+</body>
+</html>

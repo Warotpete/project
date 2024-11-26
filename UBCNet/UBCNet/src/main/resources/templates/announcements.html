@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>UBCNet - Announcements</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="site-title">
+            <h1>UBCNet</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/announcements">Announcements</a>
+            <a href="/housing">Housing</a>
+            <a href="/shop">Shop</a>
+            <a href="/post">Post</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h2>Recent Announcements</h2>
+    <ul>
+        <li th:each="announcement : ${announcements}" th:text="${announcement}"></li>
+    </ul>
+
+</main>
+</body>
+</html>

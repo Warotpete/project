@@ -1,0 +1,32 @@
+package com.ubcnet.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class AnnouncementController {
+
+    // Centralized list to store announcements
+    private List<String> announcements = new ArrayList<>();
+
+    @GetMapping("/announcements")
+    public String announcementsPage(Model model) {
+        // Pass dynamic announcements to the announcements page
+        model.addAttribute("title", "Announcements");
+        model.addAttribute("announcements", announcements);
+        return "announcements";
+    }
+
+    // Method to add new announcements (used by PostController)
+    public void addAnnouncement(String title, String message) {
+        announcements.add("Title: " + title + ", Message: " + message);
+    }
+
+    // Getter for the announcements list (if needed elsewhere)
+    public List<String> getAnnouncements() {
+        return announcements;
+    }
+}
